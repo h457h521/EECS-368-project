@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gobang</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <button id="btn" >New Game</button>
+    <button id="aibtn" >New Game_AI</button>
+    <button id="lbtn">Undo</button>
+    <canvas id="chessboard" width="510" height="510"></canvas>
+    <script src="js/main.js"></script>
+</body>
+</html>
+<script>
+    function setsize(){
+        var num=prompt("Please enter the board size");
+        var len=Number(num);
+<!--        alert("len:"+len)-->
+        document.getElementById('chessboard').width=len*30+30;
+        document.getElementById('chessboard').height=len*30+30;
+<!--        alert(document.getElementById('chessboard').width);-->
+    }
+</script>
